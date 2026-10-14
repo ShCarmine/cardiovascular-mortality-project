@@ -1,40 +1,29 @@
 # Cardiovascular Mortality Analysis
 
-This project explores a public dataset of cardiovascular disease mortality rates from Our World in Data, based on the WHO Mortality Database.
+This project analyzes cardiovascular disease mortality data from Our World in Data, based on the WHO Mortality Database.
 
 ## 🫀 Research Question
 
-**Which five countries reported the highest cardiovascular disease death rates in 2020, and how did these rates change between 2000 and 2020?**
+**Which five countries reported the highest cardiovascular disease death rates in 2020, and how did some of these rates change annually between 2000 and 2020 in countries with complete data?**
 
 ## 📊 Dataset
 
-- Source: [Our World in Data – Cardiovascular disease death rate](https://ourworldindata.org/grapher/cardiovascular-disease-death-rate-who-mdb)
-- Data source: WHO Mortality Database
+- Source: Our World in Data / WHO Mortality Database
 - File used: `cardiovascular-disease-death-rate-who-mdb.csv`
 
 ## ⚙️ What the script does
 
 - Loads and prepares the dataset
-- Renames the cardiovascular mortality column as `Death_rate`
-- Selects the data available for 2020
-- Identifies the top 5 countries with the highest cardiovascular disease death rates
-- Calculates:
-  - Mean
-  - Standard deviation
-  - Skewness
-  - Estimated uncertainty of the mean using subsampling
-- Analyzes the mortality trends of the top 5 countries from 2000 to 2020
-- Calculates the percentage change between 2000 and 2020
-- Visualizes:
-  - Top 5 countries by cardiovascular disease death rate in 2020
-  - Cardiovascular mortality trends from 2000 to 2020
+- Identifies the five countries with the highest cardiovascular disease death rates in 2020
+- Calculates mean, standard deviation, skewness, and a subsampling-based estimate of the mean uncertainty
+- Analyzes annual mortality changes from 2000 to 2020 for Moldova, Kyrgyzstan and Bulgaria
+- Calculates the mean annual percentage change and its variability
+- Generates two figures
 
 ## 📂 Output
 
-The script generates:
-
-- `Figure_1.png`
-- `Figure_2.png`
+- `Figure_1.png` – Top five countries by cardiovascular disease death rate in 2020
+- `Figure_2.png` – Mortality trends from 2000 to 2020 for Moldova, Kyrgyzstan and Bulgaria
 
 ## ▶️ How to run
 
